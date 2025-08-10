@@ -26,7 +26,9 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/fill_subscription_invoice_information/css/fill_subscription_invoice_information.css"
-# app_include_js = "/assets/fill_subscription_invoice_information/js/fill_subscription_invoice_information.js"
+app_include_js = [
+    "/assets/fill_subscription_invoice_information/js/purchase_invoice.js"
+]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/fill_subscription_invoice_information/css/fill_subscription_invoice_information.css"
@@ -242,3 +244,6 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {"dt": "Property Setter", "filters": [["module", "=", "Fill Subscription Invoice Information"]]},
+]
